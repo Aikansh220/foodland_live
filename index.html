@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodland | Premium Street Food & Shakes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        display: ['Bebas Neue', 'sans-serif'],
+                    },
+                    colors: {
+                        foody: {
+                            dark: '#1C1008',       /* Deep Premium Roasted Espresso */
+                            cardDark: '#26170D',   /* Wood Panel Accent */
+                            primary: '#FF6B00',    /* Vibrant Neon Storefront Orange */
+                            amber: '#FFAA00',      /* Golden Cheesy Amber */
+                            light: '#FFFDF9',      /* Cream White Page Base */
+                            green: '#1E6B23'       /* Botanical Wall Green */
+                        }
+                    },
+                    boxShadow: {
+                        'neon': '0 0 15px rgba(255, 107, 0, 0.4), 0 0 30px rgba(255, 170, 0, 0.2)',
+                        'neon-intense': '0 0 25px rgba(255, 107, 0, 0.7), 0 0 50px rgba(255, 170, 0, 0.4)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .neon-glow {
+            text-shadow: 0 0 8px rgba(255, 107, 0, 0.8), 0 0 20px rgba(255, 170, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-foody-light text-foody-dark font-sans selection:bg-foody-primary selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-foody-dark/95 backdrop-blur-md text-white shadow-xl border-b border-foody-primary/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="font-display text-4xl tracking-widest text-foody-primary neon-glow italic leading-none">Foodland</span>
+                <span class="text-[10px] text-foody-amber font-medium tracking-widest uppercase mt-1 pl-1">Kurukshetra</span>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-10 text-sm font-medium tracking-wide">
+                <a href="#home" class="text-foody-primary hover:text-foody-amber transition-colors">Home</a>
+                <a href="#gallery" class="text-gray-300 hover:text-foody-primary transition-colors">Dishes</a>
+                <a href="#menu" class="text-gray-300 hover:text-foody-primary transition-colors">Menu Highlights</a>
+                <a href="#visit" class="text-gray-300 hover:text-foody-primary transition-colors">Find Us</a>
+            </nav>
+
+            <div class="hidden sm:block">
+                <a href="#menu" class="bg-gradient-to-r from-foody-primary to-orange-600 hover:from-orange-600 hover:to-foody-primary text-white font-bold px-6 py-3 rounded-xl transition-all transform hover:scale-105 shadow-neon">
+                    View Menu
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative bg-foody-dark text-white overflow-hidden py-24 lg:py-36">
+        <div class="absolute inset-0 opacity-5 bg-[linear-gradient(to_right,#ff6b00_1px,transparent_1px),linear-gradient(to_bottom,#ff6b00_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center space-x-2 bg-foody-primary/10 border border-foody-primary/30 px-4 py-2 rounded-full">
+                    <span class="w-2 h-2 rounded-full bg-foody-amber animate-pulse"></span>
+                    <span class="text-foody-amber text-xs font-bold tracking-wider uppercase">Kurukshetra's Favorite Spot</span>
+                </div>
+                
+                <h1 class="text-5xl sm:text-7xl font-display tracking-tight leading-tight uppercase">
+                    CRAVING PREMIUM <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-foody-amber to-foody-primary neon-glow">STREET FOOD?</span>
+                </h1>
+                
+                <p class="text-gray-300 text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Treat yourself to our signature loaded cheesy nacho fries, crisp golden patties, artisan personal pizzas, and handcrafted creamy milkshakes. Built fresh inside our cozy joint.
+                </p>
+                
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#menu" class="bg-foody-primary hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-neon hover:shadow-neon-intense">
+                        Explore Full Menu
+                    </a>
+                    <a href="#gallery" class="border border-neutral-700 bg-neutral-900/40 hover:bg-neutral-800 text-gray-200 font-medium px-8 py-4 rounded-xl transition-all">
+                        Our Signature Dishes
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 flex justify-center items-center">
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-gradient-to-r from-foody-primary to-foody-amber rounded-3xl blur-2xl opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
+                    
+                    <div class="relative bg-foody-cardDark p-4 rounded-3xl border-2 border-foody-amber/60 shadow-2xl transition-all duration-500 transform group-hover:scale-[1.02] group-hover:border-foody-primary">
+                        <div class="w-72 h-72 sm:w-80 sm:h-80 overflow-hidden rounded-2xl bg-neutral-900 flex items-center justify-center">
+                            <img src="j.png" alt="Foodland Showcase Banner" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-foody-amber text-foody-dark font-display text-lg px-4 py-2 rounded-xl shadow-lg border border-white/20 transform rotate-2">
+                            🔥 NEW VIBE
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="bg-gradient-to-r from-foody-amber to-amber-500 py-6 shadow-xl sticky top-24 z-40">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-8 sm:gap-14 text-foody-dark font-display text-lg sm:text-2xl tracking-widest">
+            <span class="hover:scale-110 transition-transform cursor-pointer">🥪 SANDWICHES</span>
+            <span class="hover:scale-110 transition-transform cursor-pointer">🍔 BURGERS</span>
+            <span class="hover:scale-110 transition-transform cursor-pointer">🌯 WRAPS</span>
+            <span class="hover:scale-110 transition-transform cursor-pointer">🌮 TACOS</span>
+            <span class="hover:scale-110 transition-transform cursor-pointer">🥤 DRINKS</span>
+        </div>
+    </div>
+
+    <section id="gallery" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-4xl font-bold tracking-tight text-foody-dark sm:text-5xl">Signature Creations</h2>
+            <p class="text-gray-600 mt-3 text-base">Hand-assembled with premium ingredients and our special seasoning blends.</p>
+            <div class="w-16 h-1 bg-foody-primary mx-auto mt-5 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <div class="bg-white rounded-3xl shadow-md overflow-hidden border border-neutral-100 group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-60 bg-neutral-100 relative overflow-hidden flex items-center justify-center">
+                    <img src="u.png" alt="Cheesy Loaded Nacho Fries" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <span class="absolute top-4 left-4 bg-foody-primary text-white text-xs font-bold tracking-wider px-3 py-1.5 rounded-xl uppercase shadow-md">Top Rated</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-foody-dark group-hover:text-foody-primary transition-colors">Cheesy Loaded Nacho Fries</h3>
+                    <p class="text-gray-600 text-xs mt-3 leading-relaxed">Crispy premium golden fries heavily layered with liquid cheese sauce, signature dressings, sweet corn, onions, and spicy jalapeños.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-md overflow-hidden border border-neutral-100 group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-60 bg-neutral-100 relative overflow-hidden flex items-center justify-center">
+                    <img src="f.png" alt="Veg Pizza Combo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <span class="absolute top-4 left-4 bg-foody-green text-white text-xs font-bold tracking-wider px-3 py-1.5 rounded-xl uppercase shadow-md">Value Meal</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-foody-dark group-hover:text-foody-primary transition-colors">Veg Pizza Combo</h3>
+                    <p class="text-gray-600 text-xs mt-3 leading-relaxed">Freshly baked personal crust loaded with sweet corn, crispy mixed capsicum, signature red sauce, gooey mozzarella cheese, paired with a rich chocolate shake.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-md overflow-hidden border border-neutral-100 group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-60 bg-neutral-100 relative overflow-hidden flex items-center justify-center">
+                    <img src="k.png" alt="Tandoori Pizza Patty / Puff" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <span class="absolute top-4 left-4 bg-amber-500 text-white text-xs font-bold tracking-wider px-3 py-1.5 rounded-xl uppercase shadow-md">Crunch King</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-foody-dark group-hover:text-foody-primary transition-colors">Tandoori Pizza Patty / Puff</h3>
+                    <p class="text-gray-600 text-xs mt-3 leading-relaxed">An ultra-flaky, multiple layered savory golden pastry puff shell stuffed to the brim with cheese, pizza sauce, and double drizzles of rich tandoori mayonnaise.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-md overflow-hidden border border-neutral-100 group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-60 bg-neutral-100 relative overflow-hidden flex items-center justify-center">
+                    <img src="y.png" alt="Premium Grilled Burger" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <span class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold tracking-wider px-3 py-1.5 rounded-xl uppercase shadow-md">Chef Special</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-foody-dark group-hover:text-foody-primary transition-colors">Premium Grilled Burger</h3>
+                    <p class="text-gray-600 text-xs mt-3 leading-relaxed">Crisp golden veggie or paneer patty stacked high with fresh lettuce, onions, signature premium house creamy cheese spreads, inside a toasted soft bun.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="menu" class="bg-neutral-950 text-white py-24 border-t border-b border-neutral-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <h2 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">Menu Highlights</h2>
+                <p class="text-neutral-400 mt-3">Pocket-friendly gourmet options compiled straight from our kitchen list cards.</p>
+                <div class="w-16 h-1 bg-foody-primary mx-auto mt-5 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="bg-foody-cardDark/40 border border-neutral-800 p-8 rounded-3xl">
+                    <div class="flex justify-between items-end border-b border-neutral-800 pb-4 mb-6">
+                        <h3 class="text-2xl font-display text-foody-amber tracking-wider">🥟 GRILLED PATTIES</h3>
+                        <span class="text-xs text-neutral-400">Flaky Layers</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between"><span class="text-neutral-300">Masala Aloo Patty</span><span class="text-foody-primary font-bold">₹30</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Creamy Aloo Patty</span><span class="text-foody-primary font-bold">₹40</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Tandoori Creamy Patty</span><span class="text-foody-primary font-bold">₹45</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Creamy Paneer Patty</span><span class="text-foody-primary font-bold">₹55</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Chilly Pizza Patty</span><span class="text-foody-primary font-bold">₹60</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-foody-cardDark/40 border border-neutral-800 p-8 rounded-3xl">
+                    <div class="flex justify-between items-end border-b border-neutral-800 pb-4 mb-6">
+                        <h3 class="text-2xl font-display text-foody-amber tracking-wider">🥪 GRILLED SANDWICHES</h3>
+                        <span class="text-xs bg-foody-primary/20 text-foody-primary px-2 py-0.5 rounded font-mono">Extra Layer +₹10</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between"><span class="text-neutral-300">Veg Creamy Sandwich</span><span class="text-foody-primary font-bold">₹35</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Paneer Creamy Sandwich</span><span class="text-foody-primary font-bold">₹45</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Veg Cheese Grilled Sandwich</span><span class="text-foody-primary font-bold">₹45</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Tandoori Paneer Sandwich</span><span class="text-foody-primary font-bold">₹50</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Loaded Pizza Grilled Sandwich</span><span class="text-foody-primary font-bold">₹70</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-foody-cardDark/40 border border-neutral-800 p-8 rounded-3xl">
+                    <div class="flex justify-between items-end border-b border-neutral-800 pb-4 mb-6">
+                        <h3 class="text-2xl font-display text-foody-amber tracking-wider">🍔 GRILLED BURGERS</h3>
+                        <span class="text-xs bg-foody-primary/20 text-foody-primary px-2 py-0.5 rounded font-mono">Cheese Up +₹10</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between"><span class="text-neutral-300">Creamy Aloo Tikki Burger</span><span class="text-foody-primary font-bold">₹40</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Veg Premium Creamy Burger</span><span class="text-foody-primary font-bold">₹45</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Mexican Fiery Burger</span><span class="text-foody-primary font-bold">₹55</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Creamy Double Tikki Burger</span><span class="text-foody-primary font-bold">₹65</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-foody-cardDark/40 border border-neutral-800 p-8 rounded-3xl">
+                    <div class="flex justify-between items-end border-b border-neutral-800 pb-4 mb-6">
+                        <h3 class="text-2xl font-display text-foody-amber tracking-wider">🌯 WRAPS & ROLLS</h3>
+                        <span class="text-xs text-neutral-400">Warm Tortillas</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between"><span class="text-neutral-300">Veggie Creamy Wrap</span><span class="text-foody-primary font-bold">₹70</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Aloo Tikki Cheese Wrap</span><span class="text-foody-primary font-bold">₹80</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Mexican California Wrap</span><span class="text-foody-primary font-bold">₹90</span></div>
+                        <div class="flex justify-between"><span class="text-neutral-300">Chilly Paneer Cheese Wrap</span><span class="text-foody-primary font-bold">₹100</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visit" class="py-24 bg-foody-light relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+            <div class="bg-white p-10 sm:p-16 rounded-[2.5rem] shadow-xl border border-neutral-100 space-y-8">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-foody-primary/10 rounded-full text-3xl">
+                    📍
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-foody-dark">Visit Our Outlet</h2>
+                
+                <p class="text-2xl font-semibold text-neutral-800 max-w-xl mx-auto tracking-wide leading-snug bg-neutral-50 py-4 rounded-2xl border border-dashed border-neutral-200">
+                    Shop no. 559, New Colony, Kurukshetra, 136118
+                </p>
+                
+                <div class="w-12 h-0.5 bg-foody-amber mx-auto"></div>
+                
+                <p class="text-neutral-600 text-sm max-w-xl mx-auto leading-relaxed">
+                    Come see our modern setup featuring a lush botanical vertical plant wall, sleek architectural halo ring lights, and comfortable dining spaces curated for great vibes and street food cravings.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-foody-dark text-neutral-400 py-16 border-t border-neutral-900 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-8">
+            <div class="text-center sm:text-left">
+                <p class="font-display text-3xl text-foody-primary tracking-widest neon-glow italic mb-1">Foodland</p>
+                <p class="text-xs text-neutral-500">&copy; 2026 Foodland Kurukshetra. All rights reserved.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 text-xs uppercase tracking-widest font-medium">
+                <a href="#home" class="hover:text-white transition-colors">Top</a>
+                <a href="#gallery" class="hover:text-white transition-colors">Dishes</a>
+                <a href="#menu" class="hover:text-white transition-colors">Highlights</a>
+                <a href="#visit" class="hover:text-white transition-colors">Location</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
